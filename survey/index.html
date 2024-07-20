@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Build a Surevey Form</title>
+  <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+ <h1 id="title">Survey Form</h1>
+ <p id="description">This is a survey form.</p>
+ <form id="survey-form">
+   <label id="name-label">Name:</label>
+   <input id="name" type="text" placeholder="Enter name here" required />
+   <br />
+   <label id="email-label">Email:<//label>
+   <input id="email" type="email" placeholder="Enter email here" required />
+   <br />
+   <label id="number-label">Number:</label>
+   <input id="number" type="number" placeholder="Enter number" min="1" max="200" required />
+   <select id="dropdown">
+     <option>Home</option>
+     <option>Mobile</option>
+   </select>
+   <h2 class="contact">Best Method of Contact</h2>
+   <label id="radio-label">Email:</label>
+   <input type="radio" name="radio" value="email" />
+   <label>Yes</label>
+   <input type="radio" name="radio" value="email" />
+   <label>No</label>
+   <br />
+   <label id="radio-label">Phone:</label>
+   <input type="radio" name="radio" value="phone" />
+   <label>Yes</label>
+   <input type="radio" name="radio" value="phone" />
+   <label>No</label>
+   <h2 class="contact">Best Time to Call</h2>
+  <label>Morning</label>
+   <input type="checkbox" name="check" value="morning" />
+   <label>Afternoon</label>
+   <input type="checkbox" name="check" value="afternoon" />
+   <label>Evening</label>
+   <input type="checkbox" name="check" value="evening" />
+   <h2 class="contact">Comments</h2>
+   <textarea id="comments" name="comments"></textarea>
+   <button id="submit">Submit</button>
+ </form>
+</body>
+</html>
