@@ -1,0 +1,23 @@
+body {
+    padding: 30px;
+    background-color: #77B6EA;
+    display: flex;
+    }
+    
+    #title {
+      text-align: center;
+    }
+    
+    #image {
+      max-width: 100%;
+      height: auto;
+    }
+    
+    figure {
+      justify-content: center;
+      margin-left: 150px;
+    }
+    
+    img {
+      display: block;
+    }
