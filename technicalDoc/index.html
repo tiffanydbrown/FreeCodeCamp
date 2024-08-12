@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>Python Documentation</title>
+  </head>
+  <body>
+    <nav id="navbar">
+      <header id="navbar_header">Python Documentation</header>
+      <a class="nav-link" href="#What_is_Python?">What is Python?</a>
+      <a class="nav-link" href="#Data_Types">Data Types</a>
+      <a class="nav-link" href="#Conditionals">Conditionals</a>
+      <a class="nav-link" href="#Loops">Loops</a>
+      <a class="nav-link" href="#Functions">Functions</a> 
+    </nav>
+    <main id="main-doc">
+      <section class="main-section" id="What_is_Python?">
+        <header>What is Python?</header>
+        <article>
+          <p>Python is an interpreted, object-oriented, high-level programming language. Python's simple, easy to learn syntax emphasizes readability. Python supports modules and packages, which encourages program modularity and code reuse. The Python interpreter and the extensive standard library are available in source or binary form without charge for all major platforms, and can be freely distributed.</p>
+          <p>Like JavaScript (and unlike Java), Python supports a programming style that uses simple functions and variables without engaging in class definitions. However, for JavaScript, that's all there is. Python, on the other hand, supports writing much larger programs and better code reuse through a true object-oriented programming style, where classes and inheritance play an important role.</p>
+        </article>
+      </section>
+      <section class="main-section" id="Data_Types">
+        <header>Data Types</header>
+        <article>
+          <p>Python has eight data type categories:</p>
+          <ul>
+            <li>Text</li>
+            <li>Numeric</li>
+            <li>Boolean</li>
+            <li>Sequence</li>
+            <li>Mapping</li>
+            <li>Set</li>
+            <li>Binary</li>
+            <li>None</li>
+          </ul>
+          <p>Each of these data types are built-in by default and are assigned to variables. You can determine the data type of a variable by using the type() function. You can also set a specific type by using a constructor function, which is they type of data type you want to use followed by parentheses. For example:</p>
+          <ul>
+            <li>x = range(6)</li>
+            <li>x = bytes(5)</li>
+            <li>x = list(("apple", "banana", "cherry"))</li>
+          </ul>
+        </article>
+      </section>
+      <section class="main-section" id="Conditionals">
+        <header>Conditionals</header>
+        <article>
+          <p>Conditionals are used when you need a portion of code to run under certain conditions. This allows your code to run more smoothly, and keeps code from running unnecessarily, which can slow it down. Conditionals can be used in many ways, but are often used with Logical and Relational Operators, If...Else Statements, and Loops.</p>
+          <p>Relational Operators are borrowed from mathematics, and are used to compare the relationships of two values. Relational operators belong to an even larger family called boolean operators, which are operators which return a boolean. There are six different relational operators:</p>
+          <ul>
+            <li>equal to (==)</li>
+            <li>not equal to (!=)</li>
+            <li>greater than (>)</li>
+            <li>less than (<)</li>
+            <li>greater than or equal to (>=)</li>
+            <li>less than or equal to (<=)</li>
+          </ul>
+          <code>print(1 == 1) # True
+print("Steve" == "Bob") # False
+print(10 > 9) # True </code>
+          <p>Another way to run code conditionally is by using If Statements. Code following an If Statement only runs if the conditional statement is True. 
+            <code>x = 10
+if x == 10:
+	print("x is equal to 10")
+</code>
+            <p> Suppose that our condition in an if statement doesn't work. The code doesn't run, and then the program just runs whatever else afterwards. What if we want something special to happen if that condition wasn't True? This is when you would add an Else Statement.</p>
+
+            <p>An else statement is a backup piece of code that you want to run if the condition in an if statement results to False. You can add an else statement to an if statement. The code in the else statement runs when the expression in the if is False.</p> 
+            <code>time = 3
+if time > 8 and time < 20:
+	print("Hi! What would you like to order?")
+else:
+	print("Why are you here when the parlor's closed? Go home.")</code>
+            <p>if and else statements are nice, but we still need an additional level of control over decisions sometimes. The elif statement helps by introducing fallback conditions that we can check for if the if statement condition fails, but before the else block is executed. For example:</p>
+            <code>x = 20
+if x < 10:
+	print("x is less than 10")
+elif x < 30:
+	print("x is less than 30") # This will print
+else:
+	print("x is greater than or equal to 30")</code>
+        </article>
+      </section>
+      <section class="main-section" id="Loops">
+        <header>Loops</header>
+        <article>
+          <p>Python has two primative loop commands:</p>
+          <ul>
+            <li>while loops</li>
+            <li>for loops</li>
+          </ul>
+          <p>While Loops will help us repeat certain lines of code without having to type repeated lines over and over again. This will help us cut down our code and make things more efficient. But first, let's go over the structure and functionality of a while loop...</p>
+          <p>The while loop loops through a block of code as long as a supplied boolean condition is True. Often times, you need to have your condition be able to be broken due to something in the while loop. </p>
+          <code>i = 1
+while i < 6:
+  print(i)
+  i += 1</code>
+          <p>For loops are loops that run for a predefined amount of time that can't be altered. They are simpler to write than a while loop and do not run the risk of potentially running forever, which can be rather easy to accidentally do depending on your program. We can use for loops like while loops, as well. for loops are better to use when you want to run code a certain number of times.</p>
+          <code>for i in range(5):
+  print("This loop runs 5 times")</code>  
+        </article>
+      </section>
+      <section class="main-section" id="Functions">
+        <header>Functions</header>
+        <article>
+          <p>A function is a block of code which only runs when it is called. To call a function, use the function name followed by parenthesis. You can pass data, known as parameters, into a function. Information can be passed into functions as arguments. Arguments are specified after the function name, inside the parentheses. You can add as many arguments as you want, just separate them with a comma. A function can return data as a result.</p>
+          <code>def my_function():
+  print("Hello from a function")</code>
+          <p>Python also accepts function recursion, which means a defined function can call itself. Recursion is a common mathematical and programming concept. It means that a function calls itself. This has the benefit of meaning that you can loop through data to reach a result. The developer should be very careful with recursion as it can be quite easy to slip into writing a function which never terminates, or one that uses excess amounts of memory or processor power. However, when written correctly recursion can be a very efficient and mathematically-elegant approach to programming.</p>
+          <code>def tri_recursion(k):
+  if(k > 0):
+    result = k + tri_recursion(k - 1)
+    print(result)
+  else:
+    result = 0
+  return result
+
+print("\n\nRecursion Example Results")
+tri_recursion(6)</code>
+        </article>
+      </section>
+    </main>
+  </body>
+</html>
